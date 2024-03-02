@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Typing Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <label for="mode">Difficulty</label>
+        <select>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="difficult">Difficult</option>
+        </select>
+    </header>
+    <button><i class="fas fa-cog"></i></button>
+    <main>
+        <h2>Speed Test</h2>
+        <p>Type the following:<span class="type"></span></p>
+        <form>
+            <input type="text" placeholder="Type the word here..." autocomplete="off" autofocus>
+        </form>
+        <p>Time Left: <span  class="time">10</span>s</p>
+        <p>Score: <span class="score">0</span></p>
+        <div class="endgame"></div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
